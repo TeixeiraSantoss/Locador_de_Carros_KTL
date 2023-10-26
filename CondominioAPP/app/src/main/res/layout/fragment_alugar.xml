@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RadioGroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.moradores.AlugarFragment">
+
+    <TextView
+        android:id="@+id/showMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal|left|center_vertical"
+        android:layout_weight="1"
+        android:text="Marca" />
+
+    <TextView
+        android:id="@+id/showModelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Modelo" />
+
+    <TextView
+        android:id="@+id/showAno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Ano" />
+
+    <TextView
+        android:id="@+id/txtTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Você deseja alugar este veículo?"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:id="@+id/checkSim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sim"/>
+
+        <RadioButton
+            android:id="@+id/checkNao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Não"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="0"
+        android:text="Continuar" />
+
+</LinearLayout>

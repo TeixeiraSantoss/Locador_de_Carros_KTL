@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.app.condominioapp.ui.moradores.MoradoresFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_list_moradores" >
+        <action
+            android:id="@+id/action_nav_home_to_moradorFragment"
+            app:destination="@id/moradorFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_alugarFragment"
+            app:destination="@id/alugarFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/moradorFragment"
+        android:name="com.app.condominioapp.ui.moradores.MoradorFragment"
+        android:label="Adicionar"
+        tools:layout="@layout/fragment_morador" />
+    <fragment
+        android:id="@+id/alugarFragment"
+        android:name="com.app.condominioapp.ui.moradores.AlugarFragment"
+        android:label="Alugar"
+        tools:layout="@layout/fragment_alugar">
+        <action
+            android:id="@+id/action_alugarFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+
+</navigation>
